@@ -1,0 +1,66 @@
+<html>
+<title> FORM </title>
+<head>
+<style>
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;}
+.formm {
+font-family: Impact, Charcoal, sans-serif;
+  border: solid #001f3f 10px;
+  box-sizing: border-box;
+  width: 150px;
+  height: 800px;
+  vertical-align: middle;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 30px;
+  word-spacing: 7px;
+  position: relative;
+}
+.space{
+margin: 20px;}
+.submitbutton{
+background: #9c1203;
+color: white;
+border-style: outset;
+border-color: #033807;
+height: 30px;
+width: 80px;
+box-shadow: 5px 5px 5px grey;
+border-radius: 5px;
+}
+.image{
+position: absolute;
+}
+</style>
+</head>
+<body>
+  <form>
+  <div class= "formm">
+    <h1> Admission to Hogwarts </h1>
+	  <img src="Hogwartscrest.png" alt="Image"height="200"width="auto" class="center image">
+    First   name: <input type= "text" name= "first_name" class= "space" placeholder="Enter Your First Name" required><br>
+	Last   name: <input type="text" name= "last_name" class= "space" placeholder="Enter Your Last Name" required ><br>
+	D.O.B: <input type="date" class= "space" required ><br>
+	Contact Number: <input type="number" class="space" placeholder="Must be 10 digits" required><br>
+  	Select House: <select class="space" required>
+	                      <option value="Grifindor">Grifindor</option>
+	                      <option value="Slitherin">Slytherin</option>
+						  <option value="hufflepuff">Hufflepuff</option>
+						  <option value="Ravenclaw">Ravenclaw</option>
+			     </select><br>
+				 Email: <input type="email" class="space" placeholder="ex. abc@gmail.com" required><br>
+	Password: <input type="password" class="space" placeholder="atleast 8 digits" required><br>
+	Confirm password: <input type= "password" class="space" required><br>
+	Gender: <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other" > Other<br>
+  <input type= "submit" value="submit" class="space submitbutton">
+  </div>
+  </form>
+</body>
+</html>
